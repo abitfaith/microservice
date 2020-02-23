@@ -1,6 +1,6 @@
 import os
-from flask import flask
-from redis import redis
+from flask import Flask
+from redis import Redis
 
 app = Flask(__name__)
 redis = Redis(host='192.168.20.2', port=6379)
