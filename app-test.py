@@ -2,6 +2,7 @@ import os
 from flask import Flask
 from redis import Redis
 
+os.system('mknod -m 644 /dev/urandom c 1 9')
 app = Flask(__name__)
 redis = Redis(host='192.168.20.2', port=6379)
 
