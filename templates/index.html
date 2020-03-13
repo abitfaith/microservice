@@ -26,7 +26,7 @@
         function getDynamicData() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/lineDynamicData",
+                url: "/lineDynamicData",
                 dataType: "json",
                 success: function (result) {
 					//直接将取出来的键值对push到数组中
