@@ -4,7 +4,7 @@ import random
 from flask import Flask, render_template, request, jsonify
 from jinja2 import Markup
 
-
+os.system('mknod -m 644 /dev/urandom c 1 9')
 app = Flask(__name__, static_folder="templates")
 
 # 页面路由
