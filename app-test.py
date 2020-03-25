@@ -7,7 +7,7 @@ import random
 os.system('mknod -m 644 /dev/urandom c 1 9')
 app = Flask(__name__, static_folder="templates")
 redis0 = redis.Redis(host='192.168.20.3', port=6379)
-redis1 = redis.Redis(host='192.168.20.4', port=6379)
+redis1 = redis.Redis(host='192.168.20.5', port=6379)
 testnumber = 0
 
 @app.route('/insert')
